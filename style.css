@@ -15,8 +15,8 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     background: url(bg.png) no-repeat;
-    background-color: rgb(228, 228, 228);
-    background-size: 50%;
+    background-color: white;
+    background-size: 100%;
     background-position: center;
     background-attachment: fixed;
 }
@@ -30,17 +30,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: lightskyblue;
-}
-
-header .logo {
-    position: relative;
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 0 #000;
 }
 
 header .navigation a {
@@ -167,8 +156,12 @@ label {
     display: none;
 }
 
-.fit-picture {
+.primery .fit-picture {
     width: 250px;
+}
+
+header .fit-picture {
+    width: 75px;
 }
 
 @media (max-width: 960px) {
@@ -295,5 +288,9 @@ label {
 
     header .logo {
         font-size: 30px;
+    }
+
+    section {
+        background-size: 400%;
     }
 }
